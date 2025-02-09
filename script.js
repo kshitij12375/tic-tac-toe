@@ -3,6 +3,10 @@ let resetbtn=document.querySelector("#reset-btn");
 let turn0=true;
 let winnermsg=document.querySelector(".msg");
 let newgame=document.querySelector(".New-game");
+let scorex=document.querySelector("#a");
+let scoreo=document.querySelector("#b");
+let scoreofx=0;
+let scoreofo=0;
 
 const winpatterns=[
     [0,1,2],
@@ -12,7 +16,7 @@ const winpatterns=[
     [2,5,8],
     [2,4,6],
     [3,4,5],
-    [6,7,7],
+    [6,7,8],
 ];
 const newGame=()=>{
    turn0=true;
@@ -54,6 +58,13 @@ const checkWInner=()=>{
         if(pos1val===pos2val&&pos2val===pos3val){
             winnermsg.innerText=`Congratulations,Winner is ${pos1val}`;
             winnermsg.style.color="pink";
+            if(pos1val==="X"){
+                scoreofx+=1;
+                scorex.innerText=`Score of X is -${scoreofx}`}
+            else{
+                scoreofo+=1;
+                scoreo.innerText=`Score of O is -${scoreofo}`}
+          
 
             for(let box of boxes){
                 box.disabled=true;
