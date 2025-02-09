@@ -51,3 +51,24 @@ body{
     
   
 }
+#a{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: rgb(18, 18, 18);
+    color: rgb(228, 224, 224);
+    border-radius: 1rem;
+    border: none;
+  
+
+}
+#b{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: rgb(18, 18, 18);
+    color: rgb(228, 224, 224);
+    border-radius: 1rem;
+    border: none;
+    
+  
+
+}
